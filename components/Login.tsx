@@ -1,7 +1,6 @@
-import {StatusBar} from 'expo-status-bar'
-import {StyleSheet, Text, View} from 'react-native'
 import {getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged} from 'firebase/auth'
 import {useEffect, useState} from 'react'
+import {StyleSheet, View} from 'react-native'
 import {app} from '@/firebaseConfig'
 const auth = getAuth(app)
 const [data, setData] = useState({email: '', password: ''})
@@ -29,7 +28,6 @@ export const Login = () => {
       <input type='password' name='password' placeholder='Password' onChange={e => handleInputs(e)} />
       <button onClick={addData}>login</button>
       <button onClick={handleLogout}>logout</button>
-      <StatusBar style='auto' />
     </View>
   )
 }
