@@ -1,13 +1,13 @@
 import {initializeApp} from 'firebase/app'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDfTMaBKVsGlPLLrWqYvzyWkqBlt3qSxn8',
-  authDomain: 'osewa-77670.firebaseapp.com',
-  projectId: 'osewa-77670',
-  storageBucket: 'osewa-77670.appspot.com',
-  messagingSenderId: '102086719204',
-  appId: '1:102086719204:web:c53dd823bc9e63b6225ef1',
-  measurementId: 'G-VYD5TTBNB4',
+  apiKey: 'AIzaSyAh-5FwyFFSNgw2-4UhfBP7cCVUv4EI8UY',
+  authDomain: 'rssen-4d6fc.firebaseapp.com',
+  projectId: 'rssen-4d6fc',
+  storageBucket: 'rssen-4d6fc.appspot.com',
+  messagingSenderId: '63017329617',
+  appId: '1:63017329617:web:869517f57b4d58578076f0',
+  measurementId: 'G-EZ48LKX7HW',
 }
 
 export const app = initializeApp(firebaseConfig)
