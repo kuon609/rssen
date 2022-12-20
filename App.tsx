@@ -1,5 +1,5 @@
 import {getAuth} from 'firebase/auth'
-import {StyleSheet, Text, View} from 'react-native'
+import {StyleSheet, View} from 'react-native'
 import {SignUp} from '@/components/SignUp'
 import {app} from '@/firebaseConfig'
 

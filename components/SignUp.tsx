@@ -1,8 +1,7 @@
 import {StatusBar} from 'expo-status-bar'
-import {getAuth, createUserWithEmailAndPassword, Auth} from 'firebase/auth'
-import {useEffect, useState,FC} from 'react'
+import {createUserWithEmailAndPassword, Auth} from 'firebase/auth'
+import {useState, FC} from 'react'
 import {StyleSheet, Text, View} from 'react-native'
-import {app} from '@/firebaseConfig'
 
 export const SignUp: FC<{auth: Auth}> = ({auth}) => {
   const [data, setData] = useState({email: '', password: ''})
@@ -19,20 +18,13 @@ export const SignUp: FC<{auth: Auth}> = ({auth}) => {
         console.log(error)
       })
   }
-  // useEffect(() => {
-  //   onAuthStateChanged(auth, user => {
-  //     if (user) {
-  //       alert('user is logged in')
-  //     } else {
-  //       alert('user is logged out')
-  //     }
-  //   })
-  // }, [])
   return (
     <View style={styles.container}>
       <input type='email' name='email' placeholder='Email' onChange={e => handleInputs(e)} />
       <input type='password' name='password' placeholder='Password' onChange={e => handleInputs(e)} />
-      <button onClick={addData}>submit</button>
+      <button onClick={addData}>
+        <Text>submit</Text>
+      </button>
       <StatusBar style='auto' />
     </View>
   )
