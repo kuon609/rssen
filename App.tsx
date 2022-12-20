@@ -1,7 +1,7 @@
 import {getAuth} from 'firebase/auth'
 import {StyleSheet, View} from 'react-native'
-import {SignUp} from '@/components/SignUp'
-import {app} from '@/firebaseConfig'
+import {SignUp} from 'src/components/SignUp'
+import {app} from 'src/firebaseConfig'
 
 export default function App() {
   const auth = getAuth(app)

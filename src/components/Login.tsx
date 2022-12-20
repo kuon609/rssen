@@ -1,7 +1,7 @@
 import {getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged} from 'firebase/auth'
 import {useEffect, useState} from 'react'
 import {StyleSheet, View, Text} from 'react-native'
-import {app} from '@/firebaseConfig'
+import {app} from 'src/firebaseConfig'
 
 export const Login = () => {
   const auth = getAuth(app)
